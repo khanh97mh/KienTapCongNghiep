@@ -25,7 +25,6 @@ import io.katharsis.resource.annotations.JsonApiResource;
 @JsonApiResource(type = "tests")
 @Entity
 @Table(name = "test")
-@NamedQuery(name = "Test.findAll", query = "SELECT t FROM Test t")
 public class Test implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@JsonApiId
